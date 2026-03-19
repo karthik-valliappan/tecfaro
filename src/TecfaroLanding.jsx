@@ -257,11 +257,12 @@ export default function TecfaroLanding() {
         <section className="px-4 py-20 sm:px-6 lg:px-8">
           <div className="cta-panel mx-auto max-w-5xl">
             <div>
-              <p className="section-label">Next Step</p>
-              <h2 className="section-title">Deploy a landing page that feels current and cloud-ready</h2>
+              <p className="section-label">Get Started</p>
+              <h2 className="section-title">Bring sharper derivatives insight into every trading decision</h2>
               <p className="section-copy max-w-2xl">
-                The site keeps its accessible structure while presenting a more
-                distinctive brand surface for Tecfaro on Cloudflare Pages.
+                Tecfaro helps teams move faster with clearer market context,
+                focused analytics, and a more confident view of flow, open
+                interest, and risk.
               </p>
             </div>
 
@@ -273,7 +274,7 @@ export default function TecfaroLanding() {
                 Book a call
               </a>
               <a className="cta-button cta-button--secondary-dark" href="#contact">
-                View contact details
+                Contact our team
               </a>
             </div>
           </div>
