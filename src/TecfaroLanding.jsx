@@ -69,7 +69,7 @@ const stats = [
 const highlights = [
   'Purpose-built for derivatives traders and analytics teams.',
   'Modern visual hierarchy with clearer contrast and cleaner spacing.',
-  'Static Vite output ready for Cloudflare Pages deployment.',
+  'Focused workflows that help teams act with more confidence.',
 ]
 
 export default function TecfaroLanding() {
@@ -115,7 +115,7 @@ export default function TecfaroLanding() {
           <div className="hero-orb hero-orb--left" aria-hidden="true" />
           <div className="hero-orb hero-orb--right" aria-hidden="true" />
 
-          <div className="mx-auto grid max-w-6xl gap-10 lg:grid-cols-[minmax(0,0.88fr)_minmax(400px,0.98fr)] lg:items-center">
+          <div className="mx-auto grid max-w-6xl gap-12 lg:grid-cols-[minmax(0,0.76fr)_minmax(460px,1.04fr)] lg:items-center">
             <div className="pt-10 lg:pt-16">
               <p className="eyebrow">Real-time derivatives intelligence</p>
               <h1 className="hero-title">
