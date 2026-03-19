@@ -32,7 +32,7 @@ Use these settings in Cloudflare Pages:
 - Build output directory: `dist`
 - Node version: `20` or newer
 
-The project includes `public/_redirects` so direct navigation to SPA routes resolves to `index.html`.
+This site is a static landing page and does not need SPA fallback routing for Cloudflare Pages.
 
 ## Accessibility updates
 
