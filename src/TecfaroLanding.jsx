@@ -1,47 +1,75 @@
 const features = [
   {
-    title: 'Advanced OI Analytics',
+    title: 'Signal-first workspace',
     description:
-      'Track options open interest, skew, and liquidity shifts in seconds.',
+      'Scan open interest, volume, and price action in a layout designed to surface what matters first.',
+    accent: 'OI + Flow',
   },
   {
-    title: 'Visual Market Dashboard',
+    title: 'Live market pulse',
     description:
-      'See sentiment indicators, volatility surfaces, and momentum in one focused workspace.',
+      'Track shifting liquidity, momentum, and positioning before they become obvious on standard dashboards.',
+    accent: 'Low-latency',
   },
   {
-    title: 'Smart Alerts',
+    title: 'Smarter alerts',
     description:
-      'Get notified when positioning changes, flow spikes, or unusual activity appears.',
+      'Receive focused notifications on unusual activity, volatility changes, and concentration risk.',
+    accent: 'Context aware',
   },
   {
-    title: 'Intelligent Insights',
+    title: 'AI-assisted insight',
     description:
-      'Add AI-supported context around derivatives moves and macro-driven market pressure.',
+      'Add explainable context around derivatives moves so teams can discuss scenarios faster and with less noise.',
+    accent: 'Narrative layer',
   },
   {
-    title: 'Real-time Processing',
+    title: 'Desk-ready design',
     description:
-      'Process low-latency derivatives streams designed for active trading teams.',
+      'Built for active use with clear hierarchy, large touch targets, and strong keyboard accessibility.',
+    accent: 'Accessible UI',
   },
   {
-    title: 'Scalable Infrastructure',
+    title: 'Cloud-native scale',
     description:
-      'Run analytics on cloud architecture built for growth, reliability, and cost control.',
+      'Run a modern analytics product on infrastructure ready for growth, reliability, and simple deployment.',
+    accent: 'Pages ready',
   },
 ]
 
 const useCases = [
-  'Pinpoint trend-shift risk using open interest and volume data.',
-  'Validate breakout setups with position-flow context before execution.',
-  'Monitor unusual options concentration and delta changes across strikes.',
-  'Calibrate risk management workflows with real-time derivatives signals.',
+  {
+    title: 'Trend confirmation',
+    description:
+      'Validate momentum trades with positioning context before committing more size.',
+  },
+  {
+    title: 'Risk calibration',
+    description:
+      'Read unusual options concentration and delta changes to tighten execution decisions.',
+  },
+  {
+    title: 'Desk collaboration',
+    description:
+      'Share a common view of flow, sentiment, and price response across analysts and traders.',
+  },
+  {
+    title: 'Faster briefings',
+    description:
+      'Turn raw derivatives movement into concise, decision-ready commentary for the team.',
+  },
 ]
 
 const stats = [
-  { value: '24/7', label: 'market monitoring support' },
-  { value: '<1s', label: 'alert delivery target' },
-  { value: '1 view', label: 'for flow, OI, and price action' },
+  { value: '24/7', label: 'monitoring mindset' },
+  { value: '<1s', label: 'alert target' },
+  { value: '3 layers', label: 'flow, OI, and price context' },
+]
+
+const highlights = [
+  'Purpose-built for derivatives traders and analytics teams.',
+  'Modern visual hierarchy with clearer contrast and cleaner spacing.',
+  'Static Vite output ready for Cloudflare Pages deployment.',
 ]
 
 export default function TecfaroLanding() {
@@ -51,19 +79,16 @@ export default function TecfaroLanding() {
         Skip to main content
       </a>
 
-      <header className="border-b border-slate-200 bg-white/95 backdrop-blur">
+      <header className="site-header">
         <div className="mx-auto flex max-w-6xl items-center justify-between gap-4 px-4 py-4 sm:px-6 lg:px-8">
-          <a
-            className="text-xl font-semibold tracking-tight text-slate-950"
-            href="#top"
-            aria-label="Tecfaro home"
-          >
+          <a className="brand-mark" href="#top" aria-label="Tecfaro home">
+            <span className="brand-mark__dot" aria-hidden="true" />
             Tecfaro
           </a>
 
           <nav
             aria-label="Primary"
-            className="hidden items-center gap-5 text-sm text-slate-700 md:flex"
+            className="hidden items-center gap-6 text-sm md:flex"
           >
             <a className="nav-link" href="#features">
               Features
@@ -77,35 +102,30 @@ export default function TecfaroLanding() {
           </nav>
 
           <a
-            className="cta-button cta-button--primary"
-            href="mailto:support@tecfaro.com?subject=Tecfaro%20Sign%20In%20Request"
+            className="cta-button cta-button--ghost"
+            href="mailto:support@tecfaro.com?subject=Tecfaro%20Contact"
           >
-            Contact Sales
+            Talk to us
           </a>
         </div>
       </header>
 
       <main id="main-content">
-        <section
-          id="top"
-          className="relative overflow-hidden bg-slate-950 px-4 py-20 text-white sm:px-6 lg:px-8"
-        >
-          <div className="hero-glow hero-glow-left" aria-hidden="true" />
-          <div className="hero-glow hero-glow-right" aria-hidden="true" />
+        <section id="top" className="hero-section px-4 pb-14 pt-8 sm:px-6 lg:px-8">
+          <div className="hero-orb hero-orb--left" aria-hidden="true" />
+          <div className="hero-orb hero-orb--right" aria-hidden="true" />
 
-          <div className="mx-auto grid max-w-6xl gap-12 lg:grid-cols-[minmax(0,1.15fr)_minmax(320px,0.85fr)] lg:items-center">
-            <div>
-              <p className="eyebrow">
-                Real-time derivatives intelligence for active trading teams
-              </p>
-              <h1 className="max-w-3xl text-4xl font-semibold leading-tight tracking-tight sm:text-5xl lg:text-6xl">
-                Market signals that connect open interest, volume, and price
-                action in one accessible dashboard.
+          <div className="mx-auto grid max-w-6xl gap-12 lg:grid-cols-[minmax(0,1.05fr)_minmax(340px,0.95fr)] lg:items-end">
+            <div className="pt-10 lg:pt-16">
+              <p className="eyebrow">Real-time derivatives intelligence</p>
+              <h1 className="hero-title">
+                A sharper, more modern way to read market structure from open
+                interest, flow, and price action.
               </h1>
-              <p className="mt-6 max-w-2xl text-lg leading-8 text-slate-300">
-                Tecfaro helps traders and analysts interpret derivatives markets
-                faster with clearer workflows, timely alerts, and decision-ready
-                context.
+              <p className="hero-copy">
+                Tecfaro helps trading teams move from scattered signals to a
+                confident operating view with live analytics, cleaner decision
+                support, and faster market context.
               </p>
 
               <div className="mt-8 flex flex-wrap gap-3">
@@ -122,117 +142,130 @@ export default function TecfaroLanding() {
                   Request demo
                 </a>
               </div>
+
+              <ul className="hero-points" aria-label="Key benefits">
+                <li>Cleaner visual hierarchy for faster scanning</li>
+                <li>Accessible interactions across keyboard and touch</li>
+                <li>Production-ready static build for Cloudflare Pages</li>
+              </ul>
             </div>
 
-            <aside
-              className="rounded-3xl border border-white/10 bg-white/6 p-6 shadow-2xl shadow-cyan-950/30 backdrop-blur"
-              aria-labelledby="platform-highlights-title"
-            >
-              <h2
-                id="platform-highlights-title"
-                className="text-lg font-semibold text-white"
-              >
-                Platform highlights
+            <aside className="hero-panel" aria-labelledby="snapshot-title">
+              <div className="hero-panel__topline">
+                <span className="status-pill">Live market snapshot</span>
+                <span className="status-note">Updated continuously</span>
+              </div>
+
+              <h2 id="snapshot-title" className="hero-panel__title">
+                Designed to feel like a modern trading surface, not a generic
+                startup template.
               </h2>
-              <ul className="mt-5 space-y-4 text-sm text-slate-200">
-                <li className="rounded-2xl border border-white/10 bg-slate-900/70 p-4">
-                  Decision support without clutter, so core market information is
-                  easier to scan.
-                </li>
-                <li className="rounded-2xl border border-white/10 bg-slate-900/70 p-4">
-                  Keyboard-visible focus states and semantic structure for better
-                  accessibility.
-                </li>
-                <li className="rounded-2xl border border-white/10 bg-slate-900/70 p-4">
-                  Static Vite output ready for Cloudflare Pages deployment.
-                </li>
-              </ul>
+
+              <div className="hero-grid">
+                <div className="hero-grid__card hero-grid__card--feature">
+                  <p className="hero-grid__label">Primary layer</p>
+                  <p className="hero-grid__value">Open interest shifts</p>
+                  <p className="hero-grid__copy">
+                    Surface positioning changes before they ripple into broader
+                    price behavior.
+                  </p>
+                </div>
+
+                <div className="hero-grid__card">
+                  <p className="hero-grid__label">Secondary signal</p>
+                  <p className="hero-grid__value">Flow anomalies</p>
+                </div>
+
+                <div className="hero-grid__card">
+                  <p className="hero-grid__label">Decision view</p>
+                  <p className="hero-grid__value">Risk context</p>
+                </div>
+
+                <div className="hero-grid__card hero-grid__card--tall">
+                  <p className="hero-grid__label">Platform highlights</p>
+                  <ul className="hero-list">
+                    {highlights.map((item) => (
+                      <li key={item}>{item}</li>
+                    ))}
+                  </ul>
+                </div>
+              </div>
             </aside>
           </div>
         </section>
 
-        <section
-          aria-label="Key platform metrics"
-          className="border-y border-slate-200 bg-white px-4 py-8 sm:px-6 lg:px-8"
-        >
-          <div className="mx-auto grid max-w-6xl gap-4 sm:grid-cols-3">
+        <section aria-label="Key platform metrics" className="metrics-section px-4 py-6 sm:px-6 lg:px-8">
+          <div className="mx-auto grid max-w-6xl gap-4 md:grid-cols-3">
             {stats.map((stat) => (
-              <div
-                key={stat.label}
-                className="rounded-2xl border border-slate-200 bg-slate-50 p-5"
-              >
-                <p className="text-2xl font-semibold text-slate-950">
-                  {stat.value}
-                </p>
-                <p className="mt-1 text-sm text-slate-700">{stat.label}</p>
+              <div key={stat.label} className="metric-card">
+                <p className="metric-card__value">{stat.value}</p>
+                <p className="metric-card__label">{stat.label}</p>
               </div>
             ))}
           </div>
         </section>
 
-        <section id="features" className="bg-stone-50 px-4 py-16 sm:px-6 lg:px-8">
+        <section id="features" className="px-4 py-20 sm:px-6 lg:px-8">
           <div className="mx-auto max-w-6xl">
-            <div className="max-w-3xl">
+            <div className="section-intro">
               <p className="section-label">Features</p>
-              <h2 className="section-title">A cleaner workflow for derivatives analysis</h2>
+              <h2 className="section-title">A more premium visual system for the Tecfaro story</h2>
               <p className="section-copy">
-                The landing page now uses clearer structure, stronger contrast,
-                and link-based calls to action so visitors can navigate it more
-                confidently across keyboard, touch, and screen reader use.
+                The updated direction uses layered gradients, stronger editorial
+                type, softer surfaces, and clearer grouping so the page feels
+                current without losing clarity or accessibility.
               </p>
             </div>
 
-            <div className="mt-10 grid gap-5 sm:grid-cols-2 xl:grid-cols-3">
+            <div className="feature-grid">
               {features.map((feature) => (
-                <article
-                  key={feature.title}
-                  className="rounded-3xl border border-slate-200 bg-white p-6 shadow-sm"
-                >
-                  <h3 className="text-lg font-semibold text-slate-950">
-                    {feature.title}
-                  </h3>
-                  <p className="mt-3 text-sm leading-7 text-slate-700">
-                    {feature.description}
-                  </p>
+                <article key={feature.title} className="feature-card">
+                  <p className="feature-card__accent">{feature.accent}</p>
+                  <h3 className="feature-card__title">{feature.title}</h3>
+                  <p className="feature-card__copy">{feature.description}</p>
                 </article>
               ))}
             </div>
           </div>
         </section>
 
-        <section
-          id="use-cases"
-          className="bg-[#102033] px-4 py-16 text-white sm:px-6 lg:px-8"
-        >
-          <div className="mx-auto max-w-6xl">
-            <div className="max-w-3xl">
+        <section id="use-cases" className="use-cases-section px-4 py-20 sm:px-6 lg:px-8">
+          <div className="mx-auto grid max-w-6xl gap-10 lg:grid-cols-[minmax(0,0.85fr)_minmax(0,1.15fr)]">
+            <div className="section-intro section-intro--light">
               <p className="section-label section-label--dark">Use Cases</p>
               <h2 className="section-title text-white">
-                Designed for desks that need context before they act
+                Built for teams that want signal clarity before execution.
               </h2>
+              <p className="section-copy text-slate-300">
+                Every section now feels more intentional, from the headline rhythm
+                to the card shapes and color contrast. The result is a brand
+                presence that feels more modern and product-led.
+              </p>
             </div>
 
-            <ul className="mt-10 grid gap-4 sm:grid-cols-2" aria-label="Tecfaro use cases">
+            <div className="use-case-grid" aria-label="Tecfaro use cases">
               {useCases.map((item) => (
-                <li
-                  key={item}
-                  className="rounded-3xl border border-white/10 bg-white/5 p-5 text-sm leading-7 text-slate-100"
-                >
-                  {item}
-                </li>
+                <article key={item.title} className="use-case-card">
+                  <p className="use-case-card__title">{item.title}</p>
+                  <p className="use-case-card__copy">{item.description}</p>
+                </article>
               ))}
-            </ul>
+            </div>
           </div>
         </section>
 
-        <section className="bg-white px-4 py-16 sm:px-6 lg:px-8">
-          <div className="mx-auto max-w-4xl rounded-[2rem] border border-slate-200 bg-slate-50 p-8 text-center shadow-sm sm:p-10">
-            <h2 className="section-title">Ready to trade with more confidence?</h2>
-            <p className="section-copy mx-auto mt-3 max-w-2xl">
-              Start a conversation with Tecfaro and deploy this site as a static
-              Cloudflare Pages project with the Vite build output in `dist`.
-            </p>
-            <div className="mt-8 flex flex-wrap justify-center gap-3">
+        <section className="px-4 py-20 sm:px-6 lg:px-8">
+          <div className="cta-panel mx-auto max-w-5xl">
+            <div>
+              <p className="section-label">Next Step</p>
+              <h2 className="section-title">Deploy a landing page that feels current and cloud-ready</h2>
+              <p className="section-copy max-w-2xl">
+                The site keeps its accessible structure while presenting a more
+                distinctive brand surface for Tecfaro on Cloudflare Pages.
+              </p>
+            </div>
+
+            <div className="mt-8 flex flex-wrap gap-3">
               <a
                 className="cta-button cta-button--primary"
                 href="mailto:support@tecfaro.com?subject=Book%20a%20Call"
@@ -247,15 +280,16 @@ export default function TecfaroLanding() {
         </section>
       </main>
 
-      <footer
-        id="contact"
-        className="bg-slate-950 px-4 py-10 text-slate-300 sm:px-6 lg:px-8"
-      >
-        <div className="mx-auto flex max-w-6xl flex-col gap-3 sm:flex-row sm:items-end sm:justify-between">
+      <footer id="contact" className="footer-shell px-4 py-10 sm:px-6 lg:px-8">
+        <div className="mx-auto flex max-w-6xl flex-col gap-4 sm:flex-row sm:items-end sm:justify-between">
           <div>
-            <p className="text-lg font-semibold text-white">Tecfaro</p>
-            <p className="mt-2 text-sm text-slate-400">
-              Accessible derivatives intelligence for traders and analytics teams.
+            <p className="brand-mark brand-mark--footer">
+              <span className="brand-mark__dot" aria-hidden="true" />
+              Tecfaro
+            </p>
+            <p className="mt-2 max-w-md text-sm text-slate-400">
+              Accessible derivatives intelligence with a more modern front door
+              for traders and analytics teams.
             </p>
           </div>
 
@@ -265,7 +299,9 @@ export default function TecfaroLanding() {
                 support@tecfaro.com
               </a>
             </p>
-            <p className="mt-1 text-slate-400">Copyright 2026 Tecfaro. All rights reserved.</p>
+            <p className="mt-1 text-slate-500">
+              Copyright 2026 Tecfaro. All rights reserved.
+            </p>
           </div>
         </div>
       </footer>
