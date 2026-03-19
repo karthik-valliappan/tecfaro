@@ -1,6 +1,6 @@
 <<<<<<< HEAD
 # Tecfaro
-website landing page
+Website Landing Page
 =======
 # Tecfaro Website
 
