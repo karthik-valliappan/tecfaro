@@ -1,5 +1,5 @@
 <<<<<<< HEAD
-# tecfaro
+# Tecfaro
 website landing page
 =======
 # Tecfaro Website
