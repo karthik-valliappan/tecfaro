@@ -273,9 +273,6 @@ export default function TecfaroLanding() {
               >
                 Book a call
               </a>
-              <a className="cta-button cta-button--secondary-dark" href="#contact">
-                Contact our team
-              </a>
             </div>
           </div>
         </section>
