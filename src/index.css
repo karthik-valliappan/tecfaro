@@ -220,19 +220,20 @@ a {
 
 .hero-title {
   margin: 0;
-  max-width: 11ch;
-  font-size: clamp(3rem, 7vw, 6rem);
-  line-height: 0.96;
+  max-width: 9ch;
+  font-size: clamp(3rem, 5.6vw, 5.15rem);
+  line-height: 0.98;
   letter-spacing: -0.065em;
   color: #020617;
+  text-wrap: balance;
 }
 
 .hero-copy {
   margin: 1.5rem 0 0;
-  max-width: 38rem;
+  max-width: 34rem;
   color: var(--muted);
   font-size: 1.1rem;
-  line-height: 1.9;
+  line-height: 1.8;
 }
 
 .hero-points {
@@ -418,6 +419,10 @@ a {
   letter-spacing: -0.055em;
 }
 
+.section-title--light {
+  color: #f8fafc;
+}
+
 .section-copy {
   margin: 1rem 0 0;
   color: var(--muted);
@@ -518,6 +523,7 @@ button:focus-visible,
 @media (max-width: 1024px) {
   .hero-title {
     max-width: none;
+    font-size: clamp(2.8rem, 8vw, 4.4rem);
   }
 
   .feature-grid,
@@ -549,7 +555,7 @@ button:focus-visible,
 
 @media (max-width: 640px) {
   .hero-title {
-    font-size: 3rem;
+    font-size: 2.9rem;
   }
 
   .hero-copy,

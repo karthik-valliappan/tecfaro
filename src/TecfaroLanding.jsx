@@ -115,7 +115,7 @@ export default function TecfaroLanding() {
           <div className="hero-orb hero-orb--left" aria-hidden="true" />
           <div className="hero-orb hero-orb--right" aria-hidden="true" />
 
-          <div className="mx-auto grid max-w-6xl gap-12 lg:grid-cols-[minmax(0,1.05fr)_minmax(340px,0.95fr)] lg:items-end">
+          <div className="mx-auto grid max-w-6xl gap-10 lg:grid-cols-[minmax(0,0.95fr)_minmax(360px,0.9fr)] lg:items-center">
             <div className="pt-10 lg:pt-16">
               <p className="eyebrow">Real-time derivatives intelligence</p>
               <h1 className="hero-title">
@@ -233,7 +233,7 @@ export default function TecfaroLanding() {
           <div className="mx-auto grid max-w-6xl gap-10 lg:grid-cols-[minmax(0,0.85fr)_minmax(0,1.15fr)]">
             <div className="section-intro section-intro--light">
               <p className="section-label section-label--dark">Use Cases</p>
-              <h2 className="section-title text-white">
+              <h2 className="section-title section-title--light">
                 Built for teams that want signal clarity before execution.
               </h2>
               <p className="section-copy text-slate-300">
