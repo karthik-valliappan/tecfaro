@@ -146,7 +146,6 @@ export default function TecfaroLanding() {
               <ul className="hero-points" aria-label="Key benefits">
                 <li>Cleaner visual hierarchy for faster scanning</li>
                 <li>Accessible interactions across keyboard and touch</li>
-                <li>Production-ready static build for Cloudflare Pages</li>
               </ul>
             </div>
 
